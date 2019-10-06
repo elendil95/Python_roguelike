@@ -3,6 +3,7 @@ from entity import Entity
 from input_handlers import handle_keys
 from render_functions import clear_all, render_all
 from map_objects.game_map import GameMap
+
 def main():
     screen_width = 80
     screen_height = 50
@@ -22,7 +23,8 @@ def main():
     con=libtcod.console_new(screen_width, screen_height)
 
     game_map = GameMap(map_width, map_height)
-    
+    game_map.make_map()
+
     key=libtcod.Key()
     mouse=libtcod.Mouse()
 
