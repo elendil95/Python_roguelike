@@ -12,9 +12,11 @@ def render_all(con, entities, game_map, screen_width, screen_height, colors):
             wall=game_map.tiles[x][y].block_sight
 
             if wall:
+                libtcod.console_put_char(con, x, y, '#', libtcod.BKGND_NONE)
                 libtcod.console_set_char_background(con, x, y, colors.get('dark_wall'), libtcod.BKGND_SET)
             else:
-                                libtcod.console_set_char_background(con, x, y, colors.get('dark_ground'), libtcod.BKGND_SET)    
+                libtcod.console_put_char(con, x, y, '.', libtcod.BKGND_NONE)
+                libtcod.console_set_char_background(con, x, y, colors.get('dark_ground'), libtcod.BKGND_SET)    
     for entity in entities:
         draw_entity(con, entity)
     libtcod.console_blit(con, 0, 0, screen_width, screen_height, 0, 0, 0)
