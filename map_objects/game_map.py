@@ -1,3 +1,4 @@
+# Functions for room/tunnel creation and dungeon generation.
 from random import randint
 from map_objects.tile import Tile
 from map_objects.rectangle import Rect

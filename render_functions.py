@@ -1,3 +1,5 @@
+# Functions to handle rendering of the map. Edit here to choose the appearance of the tiles.
+# For simple color swaps use the 'Colors' dictionary in engine.py
 import tcod as libtcod
 def draw_entity(con, entity, fov_map):
     if libtcod.map_is_in_fov(fov_map, entity.x, entity.y):

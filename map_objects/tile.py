@@ -1,3 +1,4 @@
+#Tile Object with prorieties 
 class Tile: #Map tile object
     def __init__(self, blocked, block_sight=None): #None ~= Null value in other languages
         self.blocked = blocked

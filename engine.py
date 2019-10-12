@@ -1,3 +1,5 @@
+#main class: establish game variables and execute main game loop
+# Also bind keys for system functons (fullscreen+exit)
 import tcod as libtcod
 from entity import Entity
 from input_handlers import handle_keys

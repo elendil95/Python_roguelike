@@ -1,3 +1,4 @@
+#WIP class to bind keys for player actions and system actions: returns a key-value pair that is evaluated in engine.py
 import tcod as libtcod
 def handle_keys(key):
     if key.vk == libtcod.KEY_UP:
@@ -13,9 +14,5 @@ def handle_keys(key):
         return{'fullscreen': True}
     elif (key.vk == libtcod.KEY_ESCAPE):
         return {'exit': True}
-    
+
     return {}
-
-
-
-

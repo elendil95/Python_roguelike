@@ -1,3 +1,4 @@
+#functions to calculate field of view
 import tcod as libtcod
 
 def initialize_fov(game_map):
