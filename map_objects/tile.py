@@ -5,3 +5,4 @@ class Tile: #Map tile object
             block_sight = blocked
 
         self.block_sight = block_sight
+        self.explored = False
